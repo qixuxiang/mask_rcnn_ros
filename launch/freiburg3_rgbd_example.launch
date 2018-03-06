@@ -1,0 +1,11 @@
+<launch>
+    <node name="mask_rcnn" pkg="mask_rcnn_ros" type="mask_rcnn_node" output="screen">
+        <remap from="~input" to="/camera/rgb/image_color" />
+        <param name="~visualization" value="true" />
+    </node>
+
+    <node name="bag" pkg="rosbag" type="play"
+        args="-l $(find mask_rcnn_ros)/bags/rgbd_dataset_freiburg3_long_office_household.bag" />
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mask_rcnn_ros)/rviz/mask_rcnn_ros.rviz" />
+</launch>

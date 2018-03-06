@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>mask_rcnn_ros</name>
+  <version>0.1.0</version>
+  <description>The Mask R-CNN for ROS</description>
+
+  <maintainer email="akio.code@gmail.com">Akio Ochiai</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">http://wiki.ros.org/mask_rcnn_ros</url>
+
+  <author email="akio.code@gmail.com">Akio Ochiai</author>
+  <author>Matterport, Inc.</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>vision_opencv</run_depend>
+</package>
