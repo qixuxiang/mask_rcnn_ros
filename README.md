@@ -13,10 +13,12 @@ If you want to train the model on your own class definition or dataset, try it o
 
 
 ## Requirements
-* ROS kinetic
+* ROS Indigo/kinetic
 * TensorFlow 1.3+
 * Keras 2.0.8+
 * Numpy, skimage, scipy, Pillow, cython, h5py
+see more version details in [requirements.txt](https://github.com/qixuxiang/mask_rcnn_ros/blob/master/requirements.txt)
+I only test code on Python 2.7, it may work on Python3.X.
 
 ## ROS Interfaces
 
