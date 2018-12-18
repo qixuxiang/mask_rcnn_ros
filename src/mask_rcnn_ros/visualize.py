@@ -20,7 +20,8 @@ import cv2
 import IPython.display
 
 import utils
-
+import sys
+sys.path.remove('/opt/ros/indigo/lib/python2.7/dist-packages')
 
 ############################################################
 #  Visualization
