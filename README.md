@@ -17,11 +17,11 @@ If you want to train the model on your own class definition or dataset, try it o
 * TensorFlow 1.3+
 * Keras 2.0.8+
 * Numpy, skimage, scipy, Pillow, cython, h5py
-see more version details in [requirements.txt](https://github.com/qixuxiang/mask_rcnn_ros/blob/master/requirements.txt)
-I only test code on Python 2.7, it may work on Python3.X.
+* I only test code on Python 2.7, it may work on Python3.X.
+* see more dependency and version details in [requirements.txt](https://github.com/qixuxiang/mask_rcnn_ros/blob/master/requirements.txt)
 
 ## ROS Interfaces
-
+ 
 ### Parameters
 
 * `~model_path: string`
@@ -60,9 +60,20 @@ I only test code on Python 2.7, it may work on Python3.X.
 
 ## Getting Started
 
-1. Clone this repository to your catkin workspace
-2. Build workspace and source devel environment
-3. Run mask_rcnn node
+1. Clone this repository to your catkin workspace, build workspace and source devel environment 
+```
+$ cd ~/.catkin_ws/src
+$ git clone https://github.com/qixuxiang/mask_rcnn_ros.git
+$ cd mask_rcnn_ros
+$ python2 -m pip install --upgrade pip
+$ python2 -m pip install -r requirements.txt
+$ cd ../..
+$ catkin_make
+$ source devel/setup.bash
+
+```
+
+2. Run mask_rcnn node
       ~~~bash
       $ rosrun mask_rcnn_ros mask_rcnn_node
       ~~~
@@ -72,6 +83,7 @@ I only test code on Python 2.7, it may work on Python3.X.
 There is a simple example launch file using [RGB-D SLAM Dataset](https://vision.in.tum.de/data/datasets/rgbd-dataset/download).
 
 ~~~bash
+$ sudo chmod 777 scripts/download_freiburg3_rgbd_example_bag.sh
 $ ./scripts/download_freiburg3_rgbd_example_bag.sh
 $ roslaunch mask_rcnn_ros freiburg3_rgbd_example.launch
 ~~~
@@ -81,3 +93,7 @@ Then RViz window will appear and show result like following:
 ![example1](doc/mask_r-cnn_1.png)
 
 ![example2](doc/mask_r-cnn_2.png)
+
+## Other issue
+
+* Welcome to submit any issue if you have problems, and add your software system information details, such as Ubuntu 16/14,ROS Indigo/kinetic, Python2/Python3, Tensorflow 1.4,etc..
