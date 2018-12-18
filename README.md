@@ -98,4 +98,6 @@ Then RViz window will appear and show result like following:
 
 * If you have installed Anaconda|Python, Please delete or comment `export PATH=/home/soft/conda3/bin:$PATH` in you `~/.bashrc` file.
 
-* Welcome to submit any issue if you have problems, and add your software system information details, such as Ubuntu 16/14,ROS Indigo/kinetic, Python2/Python3, Tensorflow 1.4,etc..
+* When you run the code, please wait for a moment for the result because there will be delay when play bag file and process the images.
+
+* Welcome to submit any issue if you have problems, and add your software system information details, such as Ubuntu 16/14,ROS Indigo/Kinetic, Python2/Python3, Tensorflow 1.4,etc..
