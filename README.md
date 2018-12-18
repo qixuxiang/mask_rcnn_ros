@@ -96,4 +96,6 @@ Then RViz window will appear and show result like following:
 
 ## Other issue
 
+* If you have installed Anaconda|Python, Please delete or comment `export PATH=/home/soft/conda3/bin:$PATH` in you `~/.bashrc` file.
+
 * Welcome to submit any issue if you have problems, and add your software system information details, such as Ubuntu 16/14,ROS Indigo/kinetic, Python2/Python3, Tensorflow 1.4,etc..
